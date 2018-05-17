@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC
+    "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN"
+    "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr>
+
+   <allow>  
+        <create creator="spring" javascript="ReDwr">  <!-- 自己取名 jsp页面调用 -->
+          <param name="beanName" value="StuDwr"/>  <!-- spring配置的名字 -->
+      </create>       
+             
+   </allow>  
+</dwr>

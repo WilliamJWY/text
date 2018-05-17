@@ -1,0 +1,45 @@
+package com.pt.daoImp;
+
+import java.util.List;
+
+import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
+
+import com.pt.dao.IndexDao;
+import com.pt.vo.Index_c;
+import com.pt.vo.Index_p;
+
+public class IndexDaoImp extends HibernateDaoSupport implements IndexDao{
+
+	public boolean addIndex(Index_c i) {
+		boolean f=true;
+		try{
+			this.getHibernateTemplate().save(i);
+		}catch(Exception e){
+			f=false;
+			e.printStackTrace();
+		}
+
+		return f;
+	}
+
+	public boolean addIndexP(Index_p ip) {
+		boolean f=true;
+		try{
+			this.getHibernateTemplate().save(ip);
+		}catch(Exception e){
+			f=false;
+			e.printStackTrace();
+		}
+
+		return f;
+	}
+
+	public List<Index_p> findAllP() {
+		return this.getHibernateTemplate().find("from Index_p");
+	}
+
+	public List<Index_c> findC() {
+		return this.getHibernateTemplate().find("from Index_c");
+	}
+
+}

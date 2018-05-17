@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://xfire.codehaus.org/config/1.0">  
+  <service>  
+    <name>HelloService</name>  
+      <namespace>http://locallhost:8080/HelloService</namespace>  
+      <serviceClass>com.rwq.test.HelloService</serviceClass>  
+  </service>  
+</beans>  

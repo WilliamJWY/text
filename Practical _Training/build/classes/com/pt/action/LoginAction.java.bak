@@ -1,0 +1,91 @@
+package com.pt.action;
+
+import java.util.List;
+
+import javax.servlet.http.HttpSession;
+
+import org.apache.struts2.ServletActionContext;
+
+import com.pt.service.LoginService;
+import com.pt.service.StudentService;
+import com.pt.service.TeacherService;
+import com.pt.vo.Student;
+import com.pt.vo.Teacher;
+
+public class LoginAction {
+		LoginService ls;
+		Student stu;
+		
+		public void setLs(LoginService ls) {
+			this.ls = ls;
+		}
+		Teacher tc;
+	public Student getStu() {
+			return stu;
+		}
+		public void setStu(Student stu) {
+			this.stu = stu;
+		}
+		
+		
+	public Teacher getTc() {
+			return tc;
+		}
+		
+		public void setTc(Teacher tc) {
+			this.tc = tc;
+		}
+		//学生登陆 student_login
+		public String LoginStudent(){
+			
+			if(ls.LoginStudent(stu)){
+				List<Student> s=ls.loginFindSt(stu.getSname());
+				Student st=s.get(0);
+				
+				HttpSession session = ServletActionContext.getRequest().getSession();
+				session.setAttribute("st",st);
+				return "success";
+			}else{
+				return "fail";
+			}
+		}
+	//教师登陆	teacher_login
+		public String LoginTeather(){
+			
+			if(ls.LoginTeancher(tc)){
+				List<Teacher> s=ls.loginFindTc(tc.getJobid());
+				Teacher tch=s.get(0);
+				HttpSession session = ServletActionContext.getRequest().getSession();
+				session.setAttribute("tc",tch);
+				return "success";
+			}else{
+				return "fail";
+			}
+		}
+		
+		public String LoginLd(){
+			
+			if(ls.LoginLd(tc)){
+				List<Teacher> s=ls.loginFindTc(tc.getJobid());
+				Teacher tch=s.get(0);
+				HttpSession session = ServletActionContext.getRequest().getSession();
+				session.setAttribute("tc",tch);
+				return "success";
+			}else{
+				return "fail";
+			}
+		}
+		
+		public String LoginGly(){
+			
+			if(ls.LoginGly(tc)){
+				List<Teacher> s=ls.loginFindTc(tc.getJobid());
+				Teacher tch=s.get(0);
+				HttpSession session = ServletActionContext.getRequest().getSession();
+				session.setAttribute("tc",tch);
+				return "success";
+			}else{
+				return "fail";
+			}
+		}
+}

@@ -1,0 +1,68 @@
+package com.pt.action;
+
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
+import org.apache.struts2.ServletActionContext;
+
+import com.pt.service.OptionService;
+import com.pt.vo.Option;
+
+public class OptionAction {
+OptionService os;
+Option o;
+int iid;
+/*int oid;
+public int getOid() {
+	return oid;
+}
+public void setOid(int oid) {
+	this.oid = oid;
+}*/
+public int getIid() {
+	return iid;
+}
+public void setIid(int iid) {
+	this.iid = iid;
+}
+public Option getO() {
+	return o;
+}
+public void setO(Option o) {
+	this.o = o;
+}
+public void setOs(OptionService os) {
+	this.os = os;
+}
+public String addOption(){
+	if(os.addOption(o)){
+		return "success";
+	}else{
+		return "fail";
+	}
+}
+public String findO(){
+	System.out.println(os.findO(iid));
+	if(os.findO(iid).size()>0){
+		List<Option> op=os.findO(iid);
+		HttpSession session = ServletActionContext.getRequest().getSession();
+		 session.setAttribute("option",op);
+		return "success";
+	}else{
+		HttpServletRequest request = ServletActionContext.getRequest();
+		request.setAttribute("i",iid);
+		return "fail";
+	}
+}
+public String updateOption(){
+	if(os.updateOption(o)){
+		return "success";
+	}else{
+		return "fail";
+	}
+}
+
+
+}

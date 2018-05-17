@@ -1,0 +1,59 @@
+INDEX VERSION 1.126
+E:\eclipse\text\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2070160423.index
+\work\src
+E:\eclipse\text\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1030995342.index
+\jwy\src
+E:\eclipse\text\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2071401411.index
+\struts_2_2\src
+E:\eclipse\text\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4080129567.index
+\test_struts_hibernate_2\src
+E:\eclipse\text\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1679149696.index
+\shoppin\src
+E:\eclipse\text\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3367435525.index
+\struts_2\src
+E:\eclipse\text\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1570085553.index
+\test_hibernate\src
+E:\eclipse\text\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\768722595.index
+\work\src
+E:\eclipse\text\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3314853196.index
+\shopping\src
+E:\eclipse\text\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4223098304.index
+\Practical _Training\src
+E:\eclipse\text\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3111751872.index
+\jw\src
+E:\eclipse\text\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3921936794.index
+\shopping\src
+E:\eclipse\text\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3899730741.index
+\shoping\src
+E:\eclipse\text\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2637785677.index
+\homework\src
+E:\eclipse\text\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1108149817.index
+\New_work\src
+E:\eclipse\text\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\436942809.index
+\shoping\src
+E:\eclipse\text\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\393108045.index
+\Practical Training\src
+E:\eclipse\text\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4161394669.index
+\new_project\src
+E:\eclipse\text\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\806880623.index
+\Practical Training\src
+E:\eclipse\text\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\663980041.index
+\new_project\src
+E:\eclipse\text\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3226457296.index
+\shoppin\src
+E:\eclipse\text\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2957828782.index
+\shoppin\src
+E:\eclipse\text\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2414568589.index
+\struts_2.2\src
+E:\eclipse\text\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4283612954.index
+\Practical _Training\src
+E:\eclipse\text\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1191106797.index
+\work\src
+E:\eclipse\text\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\669947928.index
+\shop\src
+E:\eclipse\text\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1828282813.index
+\struts_2_2\src
+E:\eclipse\text\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2519778824.index
+\hibernate_spring\src
+E:\eclipse\text\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1168577755.index
+\Practical Training\src

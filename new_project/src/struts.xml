@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+
+
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.i18n.encoding" value="UTF-8"></constant>
+	<!-- <constant name="struts.ui.theme" value="simple"></constant> -->
+
+
+	<constant name="struts.custom.i18n.resources" value="login"></constant>
+	<package name="default" namespace="/" extends="struts-default">
+		<interceptors>
+			<interceptor name="text" class="testaction.Interceptor_test">
+			</interceptor>
+		</interceptors>
+
+
+<!-- 
+		<action name="test" class="testaction.test" method="success">
+			<result name="success">/jsp/success.jsp</result>
+		</action>
+		<action name="test2" class="testaction.test2" method="adduser">
+			<result name="success">/jsp/success.jsp</result>
+		</action>
+		<action name="test2" class="testaction.test2" method="adduser">
+			<result name="success">/jsp/success.jsp</result>
+		</action>
+		<action name="re" class="testaction.test3" method="register">
+			<result name="action">/jsp/register.jsp</result>
+		</action> -->
+		
+		
+		
+		<action name="ree" class="Action.RegisterAction" method="register">
+			<result name="success">/files/login.jsp</result>
+			<result name="false">/files/page.jsp</result>
+		</action>
+		
+		
+		
+		
+		
+		<action name="reee" class="Action.LoginAction" method="login">
+			<result name="success">/files/booking_page.jsp</result>
+			<result name="false">/files/login.jsp</result>
+		</action> 
+		
+		<action name="i18n" class="Action.CN_action" method="CN">
+			<result name="ok">/files/page.jsp</result>
+		</action>
+
+		<action name="i18n" class="Action.US_action" method="US">
+			<result name="ok">/files/page.jsp</result>
+		</action>
+		
+		<action name="i18nn" class="Action.CN_action" method="cn">
+			<result name="ko">/files/login.jsp</result>
+		</action>
+		
+		<action name="i18nn" class="Action.US_action" method="us">
+			<result name="ko">/files/login.jsp</result>
+		</action>
+		
+		 <action name="i18nnn" class="Action.CN_action" method="Z">
+			<result name="G">/files/booking_page.jsp</result>
+		</action>
+		
+		<action name="i18nnn" class="Action.US_action" method="U">
+			<result name="S">/files/booking_page.jsp</result>
+		</action>
+		
+		 <action name="i18nnnn" class="Action.CN_action" method="C">
+			<result name="n">/files/Admin_page.jsp</result>
+		</action>
+		
+		<action name="i18nnnn" class="Action.US_action" method="E">
+			<result name="g">/files/Admin_page.jsp</result>
+		</action>
+		
+		<!-- <action name="uploadfile" class="testaction.uploadAction"
+			method="execute">
+			<result name="success">/jsp/locale.jsp</result>
+		</action>
+
+		<action name="download" class="Download.downloadAction" method="execute">
+			<result name="success" type="stream">
+				/jsp/false.jsp
+				<param name="inputName">inputStream</param>
+				<param name="contentType">${contentType}</param>
+				<param name="contentDisposition">attachment:file=${fileName}</param>
+			</result>
+		</action>
+
+		<action name="text" class="testaction.Interceptor_test" method="execute"> 
+			<result name="success">/jsp/locale.jsp</result> <interceptor-ref name="defaultStack"></interceptor-ref> 
+			<interceptor-ref name="testin"></interceptor-ref> </action>
+
+		<action name="booking_page" class="model.order_page" method="register">
+		<result name="success">/jsp/Order_page.jsp</result>		
+		</action>
+ --> 
+	</package>
+
+
+
+	<!-- Add packages here -->
+
+</struts>

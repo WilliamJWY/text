@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <uri name="http://www.springframework.org/schema/aop" uri="file:///C:/Users/j/Desktop/SSH/spring/新建文件夹/spring-3.2.0.M1/schema/aop/spring-aop-2.5.xsd"/>
+</catalog>

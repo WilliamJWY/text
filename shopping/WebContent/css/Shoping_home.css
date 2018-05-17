@@ -1,0 +1,293 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+	text-align: center;
+	line-height: 25px;
+}
+.clear{
+clear:both;
+height:0;
+overflow:hidden;
+}
+.login ul li {
+	width: 120px;
+	float: left;
+	border: 0px #333 dashed;
+	background: #f0f0f0;
+	line-height: 30px;
+}
+
+.login ul li ul {
+	display: none;
+}
+
+.login ul li a:hover {
+	color: #ff0000;
+	background: #ffffff;
+}
+
+.login ul li a {
+	text-decoration: none;
+	color: #333333;
+	font-size: 12px;
+	display: block;
+	color: #8e8e8e;
+}
+
+.login ul li:hover ul,li a:hover ul {
+	display: block;
+	width: 120px;
+	position: absolute;
+}
+
+.login ul li ul li {
+	background-color: #ffffff;
+	width: 120px;
+}
+
+.login ul ul li a:hover {
+	background: #ffffff;
+}
+
+.login {
+	width: 1200px;
+	height: 30px;
+	margin-left: auto;
+}
+
+#top {
+	width: 100%;
+	height: 30px;
+	background: #f0f0f0;
+}
+
+#search {
+	text-align: center;
+	height: 130px;
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.search_form {
+	margin-top: 30px;
+}
+
+input.style1 {
+	border: 2px solid red;
+	width: 410px;
+	height: 35px;
+
+}
+
+input.style2 {
+	width: 40px;
+	height: 39px;
+	border: none;
+	background-color: #f10215;
+	font-size: 15px;
+	font-weight: 900;
+	color: #fff;
+margin-right:11%;
+}
+
+
+.font {
+	font-size: 12px;
+	color: #8e8e8e;
+	letter-spacing: 3px;
+	float-right: 500px;
+}
+
+.logo {
+	float: left;
+}
+
+#Menu {
+	background-color: #DD2727;
+	height: 36px;
+	width: 100%;
+}
+
+
+
+.border {
+	border: 0px solid #000000;
+	width: 1200px;
+	height: 500px;
+	margin-left:auto;
+margin-right:auto;
+	
+}
+
+.left { 
+	float:left;
+	width: 210px;
+	height: 500px;
+	background: #7b7b7b;
+	color: #fffff;
+	font-family: sans-serif;
+	text-indent: 19px;
+	letter-spacing: 2px;
+	font-size: 15px;
+left:-1px;;
+}
+
+a {
+	text-decoration: none;
+}
+
+.content { 
+	width: 750px;
+	height: 350px; 
+	float:left;
+	padding-left:30px;
+}
+
+.right { 
+	width: 180px;
+	float:right;
+	height: 500px; 
+	background: #7b7b7b;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.shang {
+	border: 0px solid #000000;
+
+	width: 140px;
+	height: 245px;
+	font-family: sans-serif;
+	font-size: 13px;
+	letter-spacing: 3px;
+}
+
+.xia {
+	border: 0px solid #000000; 
+	width: 140px;
+	height: 250px; 
+}
+
+.bottom_a { 
+float:left; 
+	width: 365px;
+	height: 135px; 
+	padding-left:30px;
+	padding-top:15px;
+}
+
+.bottom_b { 
+	float:right;
+	width: 365px;
+	height: 135px; 
+	padding-right:30px;
+	padding-top:15px;
+}
+
+#bottom {
+	border: 0spx solid #000000;
+	width: 1198px;
+	height: 700px;
+margin-left:auto;
+margin-right:auto;
+padding-top:20px;
+}
+
+.menu_logo {
+	border: 0px solid #000000;
+	width: 1198px;
+	height: 300px;
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+.commodity {
+	border: 0px solid #000000;
+	width: 1198px;
+	height: 300px;
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+.text {
+	border: 0px solid #000000;
+	width: 1198px;
+	height: 50px;
+	font-weight: bold;
+	text-align: center;
+}
+</style>
+<style type="text/css">
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+ul,li {
+	list-style: none;
+}
+
+img {
+	border: none;
+}
+
+li,input,select,textarea,img {
+	vertical-align: middle;
+}
+
+.clear {
+	clear: both;
+	line-height: 0px;
+	font-size: 0px;
+	height: 0px;
+	overflow: hidden;
+}
+
+#picshow {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#picshow  ul {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#picshow ul li {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#picshow {
+	position: relative;
+}
+
+#shuzi {
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+}
+
+#shuzi  span {
+	background: url(images/yuan2.gif) no-repeat;
+	color: #fff;
+	margin-left: 3px;
+	margin-right: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+#shuzi  .on {
+	background: url(images/yuan.gif) no-repeat;
+	color: #03F;
+}

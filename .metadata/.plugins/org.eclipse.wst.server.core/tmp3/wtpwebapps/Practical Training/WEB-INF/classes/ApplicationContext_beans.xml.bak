@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:aop="http://www.springframework.org/schema/aop"
+          xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+           http://www.springframework.org/schema/aop
+           http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+           http://www.springframework.org/schema/tx
+            http://www.springframework.org/schema/tx/spring-tx-2.5.xsd"
+           
+            >
+         
+
+            
+<!--学生注入 -->
+ <bean id="StuDwr" class="com.pt.action.stuDWR">
+ <property name="ss" ref="ss"></property>
+ </bean>
+
+ <bean id="Stu" class="com.pt.action.StudentAction">
+ <property name="ss" ref="ss"></property>
+ </bean>
+ 
+<bean id="ss" class="com.pt.service.StudentService">
+<property name="sdao" ref="sdao"></property>
+</bean>
+
+ <bean id="sdao" class="com.pt.daoImp.StudentDaoImpl">
+ <property name="sessionFactory" ref="sessionfactory"></property>
+ </bean>
+ 
+
+ <!--老师注入 -->
+
+ 
+ <bean id="Tea" class="com.pt.action.TeacherAction">
+ <property name="ts" ref="ts"></property>
+ </bean>
+ 
+<bean id="ts" class="com.pt.service.TeacherService">
+<property name="tdao" ref="tdao"></property>
+</bean>
+
+ <bean id="tdao" class="com.pt.daoImp.TeacherDaoImpl">
+ <property name="sessionFactory" ref="sessionfactory"></property>
+ </bean>
+ 
+ <!-- 登陆注入-->
+ <bean id="LA" class="com.pt.action.LoginAction">
+ <property name="ls" ref="Ls"></property>
+ <property name="ts" ref="ts"></property>
+ <property name="ss" ref="ss"></property>
+ </bean>
+ <bean id="Ls" class="com.pt.service.LoginService">
+<property name="lgDao" ref="Ldao"></property>
+</bean>
+
+ <bean id="Ldao" class="com.pt.daoImp.LoginDaoImp">
+ <property name="sessionFactory" ref="sessionfactory"></property>
+ </bean> 
+  <!-- 修改注入-->
+  <bean id="Ea" class="com.pt.action.EditAction">
+<property name="es" ref="Es"></property>
+</bean>
+  
+  <bean id="Es" class="com.pt.service.EditService">
+<property name="edao" ref="Edao"></property>
+</bean>
+  
+  <bean id="Edao" class="com.pt.daoImp.EditDaoImp">
+ <property name="sessionFactory" ref="sessionfactory"></property>
+ </bean> 
+ 
+ <!-- 问卷注入 -->
+   <bean id="Qa" class="com.pt.action.QuestionnaireAction">
+<property name="qs" ref="Qs"></property>
+</bean>
+ 
+   <bean id="Qs" class="com.pt.service.QuestionnaireService">
+<property name="qdao" ref="Qdao"></property>
+</bean>
+ 
+   <bean id="Qdao" class="com.pt.daoImp.QuestionnaireDaoImp">
+ <property name="sessionFactory" ref="sessionfactory"></property>
+ </bean>
+ 
+ <!-- 用户注入-->
+ <bean id="US" class="com.pt.action.UserAction">
+ <property name="ts" ref="ts"></property>
+ <property name="ss" ref="ss"></property>
+ </bean>
+ 
+</beans>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+  <!--   <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <constant name="struts.devMode" value="true" />
+
+    <package name="default" namespace="/" extends="struts-default">
+
+        <default-action-ref name="index" />
+
+        <global-results>
+            <result name="error">/WEB-INF/jsp/error.jsp</result>
+        </global-results>
+
+        <global-exception-mappings>
+            <exception-mapping exception="java.lang.Exception" result="error"/>
+        </global-exception-mappings>
+
+        <action name="index">
+            <result type="redirectAction">
+                <param name="actionName">HelloWorld</param>
+                <param name="namespace">/example</param>
+            </result>
+        </action>
+    </package>
+
+    <include file="example.xml"/> -->
+
+    <!-- Add packages here -->
+    <constant name="struts.objectFactory" value="spring"/>
+    <constant name="struts.enable.DynamicMethodInvocation" value="true" />
+    <constant name="struts.devMode" value="true" />
+    <constant name="struts.i18n.encoding" value="utf-8" />
+    <constant name="struts.ui.theme" value="simple"></constant>
+    <constant name="struts.custom.i18n.resources" value="register"></constant>
+    <package name="default" namespace="" extends="struts-default">
+   
+
+      <action name="addStu" class="Stu" method="addStudent">
+            <result name="success">../test/ok.jsp</result>
+            <result name="fail">../test/fail.jsp</result>
+        </action>
+        
+      <action name="addTc" class="Tea" method="addTeacher">
+            <result name="success">../test/ok.jsp</result>
+            <result name="fail">../test/fail.jsp</result>
+        </action>
+ 
+ 	<action name="loginStu" class="LA" method="LoginStudent">
+            <result name="success">/jsp/addquestionnaire.jsp</result>
+            <result name="fail">../test/file.jsp</result>
+        </action>
+     <action name="loginTc" class="LA" method="LoginTeather">
+            <result name="success">../test/Copy_of_yonghuguanli.jsp</result>
+            <result name="fail">../test/file.jsp</result>
+        </action>
+        <action name="loginLd" class="LA" method="LoginLd">
+            <result name="success">../test/tctest.jsp</result>
+            <result name="fail">../test/file.jsp</result>
+        </action>
+        <action name="loginGly" class="LA" method="LoginGly">
+            <result name="success">/jsp/page.jsp</result>
+            <result name="fail">../test/file.jsp</result>
+        </action>
+        
+        <action name="StuInfo" class="US" method="StuInfo">
+            <result name="success">/jsp/StuInfo.jsp</result>
+            <result name="fail">../test/file.jsp</result>
+        </action>
+        
+        <action name="UpdateStu" class="US" method="UpdateStu">
+            <result name="success">/jsp/userManage.jsp</result>
+            <result name="fail">../test/file.jsp</result>
+        </action>
+        
+         <action name="EditStu" class="US" method="EditStu">
+            <result name="success">/jsp/userManage.jsp</result>
+            <result name="fail">../test/file.jsp</result>
+        </action>
+        
+         <action name="EditTea" class="US" method="EditTea">
+            <result name="success">/jsp/userManage.jsp</result>
+            <result name="fail">../test/file.jsp</result>
+        </action>
+        
+        <action name="TeaInfo" class="US" method="TeaInfo">
+            <result name="success">/jsp/TeaInfo.jsp</result>
+            <result name="fail">../test/file.jsp</result>
+        </action>
+        
+        <action name="UpdateTea" class="US" method="UpdateTea">
+            <result name="success">/jsp/userManage.jsp</result>
+            <result name="fail">../test/file.jsp</result>
+        </action>
+        
+        <action name="DelStu" class="US" method="DelStu">
+            <result name="success">/jsp/userManage.jsp</result>
+            <result name="fail">../test/file.jsp</result>
+        </action>
+        
+         <action name="DelTea" class="US" method="DelTea">
+            <result name="success">/jsp/userManage.jsp</result>
+            <result name="fail">../test/file.jsp</result>
+        </action>
+        <action name="editspass" class="Ea" method="editspass">
+            <result name="success">/jsp/login.jsp</result>
+            <result name="fail">../test/file.jsp</result>
+        </action>
+        <action name="edittpass" class="Ea" method="edittpass">
+            <result name="success">/jsp/login.jsp</result>
+            <result name="fail">../test/file.jsp</result>
+        </action>
+   <action name="qqq" class="Qa" method="addQuestionnaire">
+            <result name="success">../test/ok.jsp</result>
+            <result name="fail">../test/file.jsp</result>
+           </action> 
+        <action name="loginAdmin" class="SA" method="LoginAdmin">
+            <result name="success">/jsp/adminManage.jsp</result>
+        </action>
+         <action name="editRstate" class="SA" method="editRstate">
+            <result name="success">/jsp/adminManage.jsp</result>
+            <result name="false">../test/adminManage.jsp</result>
+        </action> 
+        <action name="selectbyrid" class="FEA" method="selectbyrid">
+            <result name="success">/jsp/FuctionEdit.jsp</result>
+        </action>
+         <action name="EditFunction" class="FEA" method="EditFunction">
+            <result name="success">/jsp/adminManage.jsp</result>
+        </action>
+         <action name="deleteRole" class="DRA" method="deleteRole">
+            <result name="success">/jsp/adminManage.jsp</result>
+            <result name="false">../test/file.jsp</result>
+        </action> 
+         <action name="addRole" class="ANRA" method="addRole">
+            <result name="success">/jsp/adminManage.jsp</result>
+            <result name="false">../test/file.jsp</result>
+        </action> 
+                 <action name="addIndex" class="Ia" method="addIndex">
+            <result name="success">../test/ok.jsp</result>
+            <result name="fail">../test/file.jsp</result>
+        </action> 
+        
+        <action name="addIndexP" class="Ia" method="addIndexP">
+            <result name="success">../test/ok.jsp</result>
+            <result name="fail">../test/file.jsp</result>
+        </action> 
+        
+        <action name="addOption" class="Oa" method="addOption">
+            <result name="success">../test/ok.jsp</result>
+            <result name="fail">../test/file.jsp</result>
+        </action>
+        
+        <action name="findO" class="Oa" method="findO">
+            <result name="success">/jsp/updateOption.jsp</result>
+            <result name="fail">/jsp/addOption.jsp</result>
+        </action>
+        
+        <action name="updateOption" class="Oa" method="updateOption">
+            <result name="success">../test/ok.jsp</result>
+            <result name="fail">../test/file.jsp</result>
+        </action>
+    </package>
+
+</struts>

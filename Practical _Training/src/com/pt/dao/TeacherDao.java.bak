@@ -1,0 +1,12 @@
+package com.pt.dao;
+
+import java.util.List;
+
+import com.pt.vo.Teacher;
+
+
+public interface TeacherDao {
+	
+	public boolean addteacher(Teacher tea);
+	
+}

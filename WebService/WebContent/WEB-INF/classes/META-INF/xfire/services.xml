@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans >
+
+<service xmlns="http://xfire.codehaus.org/config/1.0">
+
+<name>WebService</name>
+
+<namespace>
+http://localhost:8080/WebService
+</namespace>
+
+<serviceClass>
+test.service.testService
+</serviceClass>
+
+<implementationClass>
+test.serviceImpl.testServiceImpl
+</implementationClass>
+
+</service>
+
+
+
+</beans>

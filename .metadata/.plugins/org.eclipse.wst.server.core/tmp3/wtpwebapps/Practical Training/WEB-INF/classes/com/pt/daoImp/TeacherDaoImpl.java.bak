@@ -1,0 +1,27 @@
+package com.pt.daoImp;
+
+import java.util.List;
+
+import org.hibernate.HibernateException;
+import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
+
+import com.pt.dao.TeacherDao;
+import com.pt.vo.Student;
+import com.pt.vo.Teacher;
+
+public class TeacherDaoImpl extends HibernateDaoSupport implements TeacherDao {
+
+	public boolean addteacher(Teacher tea) {
+		boolean f=false;
+		try{
+			this.getHibernateTemplate().save(tea);
+			f=true;
+		}catch(HibernateException e){
+			e.printStackTrace();
+		}
+		return f;
+	}
+
+
+
+}

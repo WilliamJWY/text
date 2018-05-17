@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd" default-autowire="byName">
+
+	<bean id="bean1" class="Bean.bean1">
+		<!-- <property name="b2" ref="bean2"></property>
+		<property name="b3" ref="bean3"></property>
+		<property name="b4" ref="bean4"></property>
+		<property name="b5" ref="bean5"></property> -->
+	</bean>
+	<bean id="date" abstract="true">
+		<property name="id" value="1"></property>
+		<property name="name" value="zs"></property>
+	</bean>
+	<bean id="b2" class="Bean.bean2" parent="date">
+	</bean>
+	<bean id="b3" class="Bean.bean3" parent="date">
+		<property name="pass" value="123"></property>
+	</bean>
+	<bean id="b4" class="Bean.bean4" parent="date">
+		<property name="age" value="23"></property>
+	</bean>
+	<bean id="b5" class="Bean.bean5" parent="date">
+	</bean>
+
+</beans>

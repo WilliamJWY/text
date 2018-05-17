@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"	
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	       http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	       http://www.springframework.org/schema/aop
+           http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+
+<aop:aspectj-autoproxy proxy-target-class="true"></aop:aspectj-autoproxy>
+	<!-- <bean id="user" class="odel.User">
+		<property name="name" value="jany"></property>
+		<property name="age" value="18"></property>
+		<property name="sex" value="male"></property>
+	</bean>
+	
+	<property name="list" ref="user">
+		<list>
+			<value>list1</value>
+			<value>list2</value>
+			<value>list3</value>
+		</list>
+	</property> 
+	
+	<bean id="Dao_Imp" class="Dao_Imp.Dao_Imp_mysql" />
+	<bean id="user_service" class="Service.User_Service">
+		<constructor-arg ref="Dao_Imp"></constructor-arg>
+	</bean> -->
+	
+	<!-- <aop:aspectj-autoproxy/>
+<bean  id="checkAspect"  class="Proxy.Handler"></bean>
+<bean  id="Dao_Imp_mysql"  class="Dao_Imp.Dao_Imp_mysql"></bean> -->
+
+<bean id="ldao" class="Dao_Imp.Dao_Imp_Log">
+<property name="sessionFactory" ref="sessionfactory"></property>
+ </bean>
+<bean id="user_Dao_Imp" class="Dao_Imp.User_Dao_Imp">
+	<property name="ldao" ref="ldao"></property>
+	<property name="sessionFactory" ref="sessionfactory"></property>
+</bean>
+
+</beans>
